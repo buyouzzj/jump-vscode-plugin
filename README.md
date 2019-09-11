@@ -1,6 +1,6 @@
 # jump-vscode-plugin README
 
-This is the README for your extension "jump-vscode-plugin". After writing up a brief description, we recommend including the following sections.
+一个vscode插件，用于跳转到api接口页面
 
 ## Features
 
