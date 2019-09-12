@@ -1,6 +1,6 @@
 {
 	"name": "yunbo-jump",
-	"displayName": "跳转至指定api",
+	"displayName": "Jump To API Page",
 	"description": "跳转至指定api",
 	"version": "1.0.0",
 	"publisher": "yunbo",
