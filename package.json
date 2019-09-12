@@ -2,7 +2,8 @@
 	"name": "yunbo-jump",
 	"displayName": "跳转至指定api",
 	"description": "跳转至指定api",
-	"version": "0.0.1",
+	"version": "1.0.0",
+	"publisher": "云博",
 	"engines": {
 		"vscode": "^1.38.0"
 	},
