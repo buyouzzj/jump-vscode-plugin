@@ -1,7 +1,7 @@
 {
-	"name": "jump-vscode-plugin",
-	"displayName": "jump-vscode-plugin",
-	"description": "",
+	"name": "yunbo-jump",
+	"displayName": "跳转至指定api",
+	"description": "跳转至指定api",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.38.0"
@@ -10,7 +10,7 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.helloWorld"
+		"*"
 	],
 	"main": "./extension.js",
 	"contributes": {
