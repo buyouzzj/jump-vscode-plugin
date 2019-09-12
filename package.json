@@ -3,7 +3,10 @@
 	"displayName": "跳转至指定api",
 	"description": "跳转至指定api",
 	"version": "1.0.0",
-	"publisher": "云博",
+	"publisher": "yunbo",
+	"repository": {
+		"url": "https://github.com/heromen/jump-vscode-plugin.git"
+	},
 	"engines": {
 		"vscode": "^1.38.0"
 	},
