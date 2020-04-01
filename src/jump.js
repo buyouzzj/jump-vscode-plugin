@@ -8,7 +8,8 @@ function provideDefinition (document, position) {
   const destPath = `${workDir.split('src')[0]}src/api/request.js`;
   const word = document.getText(document.getWordRangeAtPosition(position));
   const line = document.lineAt(position).text
-  if(line.trim().startsWith(`this.$api.${word}`)) {
+  const matchWord = line.indexOf(`this.$api.${word}`)
+  if(matchWord > -1) {
     if (destPath) {
       let index = 0;
       const file = fs.readFileSync(destPath);
