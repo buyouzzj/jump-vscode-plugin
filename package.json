@@ -2,7 +2,7 @@
 	"name": "yunbo-jump",
 	"displayName": "jump-to-api-page",
 	"description": "跳转至指定api",
-	"version": "1.0.",
+	"version": "1.0.4",
 	"publisher": "yunbo",
 	"repository": {
 		"url": "https://github.com/heromen/jump-vscode-plugin.git"
