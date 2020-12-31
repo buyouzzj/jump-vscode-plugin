@@ -2,13 +2,13 @@
 	"name": "yunbo-jump",
 	"displayName": "jump-to-api-page",
 	"description": "跳转至指定api",
-	"version": "1.0.4",
+	"version": "1.1.0",
 	"publisher": "yunbo",
 	"repository": {
 		"url": "https://github.com/heromen/jump-vscode-plugin.git"
 	},
 	"engines": {
-		"vscode": "^1.38.0"
+		"vscode": "^1.50.0"
 	},
 	"categories": [
 		"Other"
@@ -18,12 +18,7 @@
 	],
 	"main": "./extension.js",
 	"contributes": {
-		"commands": [
-			{
-				"command": "extension.helloWorld",
-				"title": "Hello World"
-			}
-		]
+		"commands": []
 	},
 	"scripts": {
 		"test": "node ./test/runTest.js"

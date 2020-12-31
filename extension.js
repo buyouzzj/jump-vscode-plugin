@@ -12,7 +12,7 @@ function activate(context) {
 
 	// Use the console to output diagnostic information (console.log) and errors (console.error)
 	// This line of code will only be executed once when your extension is activated
-	console.log('恭喜, your extension "jump-vscode-plugin" is now active!');
+	console.log('恭喜, 你的插件 "jump-vscode-plugin" 已激活!');
 	require('./src/jump.js')(context);
 }
 exports.activate = activate;

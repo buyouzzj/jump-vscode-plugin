@@ -26,9 +26,28 @@ function provideDefinition (document, position) {
   }
 }
 
+class Goto {
+  provideDefinition(document, position) {
+    const fileName = document.fileName;
+    const workDir = path.dirname(fileName);
+    console.log(fileName, workDir);
+    const line = document.lineAt(position).text
+    const reg = /(\'|\")@\/(.*)\1/
+    if (reg.test(line)) {
+      const res = reg.exec(line)
+      if (!res) {
+        console.error('路径错误')
+      }
+      const destPath = `${workDir.split('/src/')[0]}/src/${res[2]}`
+      return new vscode.Location(vscode.Uri.file(destPath), new vscode.Position(0, 12));
+    }
+  }
+}
 module.exports = function (context) {
   // 注册如何实现跳转到定义，第一个参数表示仅对javascript文件生效
   context.subscriptions.push(vscode.languages.registerDefinitionProvider(['vue'], {
     provideDefinition
   }));
+  const sel = { scheme: 'file', pattern: '**/*.{js,jsx,ts,tsx,vue}' }
+  context.subscriptions.push(vscode.languages.registerDefinitionProvider(sel, new Goto()))
 };
